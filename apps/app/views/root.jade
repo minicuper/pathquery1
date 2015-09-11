@@ -1,0 +1,10 @@
+index:
+  h1 Root
+  a(href="/home") edit
+
+  h2 Users products
+
+  ul
+    each _page.products as #product
+      li
+        span {{#product.name}}

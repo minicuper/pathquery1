@@ -1,0 +1,14 @@
+index:
+  p Home
+  a(href="/") root
+
+  ul
+    each _page.products as #product
+      li
+        span {{#product.name}}
+        input(type="checkbox" checked="{{getSetChecked(#product, _page.user.productIds)}}")
+        a(on-click='remove(#product.id)') x
+
+  form(on-submit="submit(_page.name)")
+    input(value="{{_page.name}}")
+    button Add

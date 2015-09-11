@@ -1,0 +1,9 @@
+{
+  "generator-derby": {
+    "project": "pathquery1",
+    "apps": [
+      "app"
+    ],
+    "coffee": true
+  }
+}
